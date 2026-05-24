@@ -1,0 +1,149 @@
+\documentclass[a4paper,8pt]{article}
+
+\usepackage{parskip} 
+\usepackage{hologo}
+\usepackage{fontspec}
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9, top=.4in, bottom=.4in]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.42\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+
+\titlespacing{\section}{0pt}{4pt}{6pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\color[HTML]{110223}%{1C033C}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+% \usepackage{times}
+
+% For underline
+\usepackage[normalem]{ulem}
+
+\setmainfont{Arial}  % Set it to whatever you like
+
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+%Header
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\color[HTML]{1C033C}\Huge Dhamodharan Sundararajan \\[8pt]
+% \color[HTML]{371e77}\large Full-Stack Software Developer \\[4pt]
+
+\newcommand{\contactsep}{\ \textbar\ }
+{\small
+\textcolor[HTML]{371e77}{
+\faEnvelope\ sdhamodharan20@gmail.com%
+\contactsep \faMobile\ +91 9840810060%
+% \contactsep \faGithub\ git/dsundar%
+\contactsep \faLinkedin\ linkedin.com/in/dsundar16%
+\contactsep \faCode\ leetcode/dsundar%
+}
+}
+\end{tabularx}
+
+\section{Skills}
+\color[HTML]{1C033C}\textbf{Languages:} Java, JavaScript, TypeScript, C++, Python, HTML, CSS, SQL\\[1pt]
+\color[HTML]{1C033C}\textbf{Technologies \& Tools:} Spring, React.js, Kafka, Cassandra, Elasticsearch, Node.js, GraphQL, MongoDB, Maven, Git, Docker, Helm, Kubernetes, Azure, AWS, Grafana, GCP
+% \color[HTML]{1C033C}\textbf{Concepts:} Data Structures \& Algorithms, Distributed Systems, Microservices, API Design, Database Design, Micro Frontend, Agile Methodology
+
+
+\section{Work Experience}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{{Mercedes-Benz R\&D, Bangalore}} \hfill \color[HTML]{371e77} May 2022 - Present \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Senior Software Engineer}}\ \hfill \color[HTML]{4B28A4} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Designed and built a workflow management system to automate multi-step approvals and task routing, reducing turnaround time, using Java, Spring Boot, Activiti Cloud, React, Keycloak, PostgreSQL, Docker, Kubernetes, GitHub Actions CI/CD, and Grafana.
+        \item Built a fault management system with React UI and Spring Boot APIs for configurable fault attributes; integrated Drools rule engine to auto-route faults based on user-defined criteria.
+        \item Architected a resilient order management system using Java, Spring Boot, and Resilience4j (Circuit Breakers/Fallbacks), maintaining zero downtime during 30\% downstream service failure simulations.
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{{Polaris Virtusa, Chennai}} \hfill \color[HTML]{371e77} Apr 2021 - May 2022 \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Full-Stack Developer}}\ \hfill \color[HTML]{4B28A4} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Spearheaded migration of a legacy monolithic banking core to Spring Boot microservices and ReactJS, improving deployment frequency from bi-weekly to on-demand (40\% faster).
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{Cognizant Technology Solutions, Chennai} \hfill \color[HTML]{371e77} Jan 2019 - Apr 2021 \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Software Developer}} \hfill \color[HTML]{4B28A4} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Developed and maintained RESTful APIs using Java Spring Boot with MySQL for policy creation, renewal, and claims processing across insurance product lines.
+        \item Built reusable React UI components for policy management dashboards, enabling agents to configure and compare policy types efficiently.
+        \item Collaborated with cross-functional teams to gather requirements, define API contracts, and deliver end-to-end features across Spring Boot, React, and MySQL.
+    \end{itemize}
+    \end{minipage}
+\end{tabularx}\\[3pt]
+
+% Education
+\section{Education}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{Anna University (SAEC) Chennai} & \hfill \color[HTML]{371e77} Aug 2014 - Jun 2018 \\
+\color[HTML]{371e77} B.Tech. in Information Technology & \hfill \color[HTML]{4B28A4} \textit{\textbf{Grade : First Class}} \\
+\multicolumn{2}{@{}X@{}}{Relevant Coursework: Object Oriented Programming, Databases, Discrete Maths, Data Structures and Algorithms, Operating Systems, Computer Networks, Machine Learning, Data Mining, Advance Data Structures and Algorithms, Information Retrieval, Image Processing}
+\end{tabularx}\\[3pt]
+
+% Projects
+\section{Project Work}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item \textbf{Vehicle Telemetry Platform:} Developed a full-stack vehicle monitoring application using Java, Spring Boot, React, and Kafka. Built REST APIs for telemetry ingestion, real-time fleet diagnostic dashboards, and event-driven microservices backed by Cassandra.
+        \item \textbf{ML-Based Support Ticket Classifier:} Designed a high-concurrency event-driven pipeline using Java, Spring Boot, and Apache Kafka to classify customer queries in real time via NLP models; improved inference latency to under 200ms and handled spikes up to 5k tickets/hour.
+        \item \textbf{Microfrontend Vehicle Test Data Platform:} Built a React.js microfrontend architecture for vehicle test data and PDM data layer workflows; designed modular reusable components to improve scalability and maintainability.
+    \end{itemize}
+    \end{minipage}
+\end{tabularx}\\[3pt]
+
+% Leadership and Volunteering
+\section{Awards and Certificates}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item \textbf{Silver Star Award:} Awarded twice in the same year at Mercedes-Benz for exceptional performance.
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+\end{document}
