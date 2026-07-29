@@ -1,0 +1,81 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+%Version for spanish users, by dgarhdez
+
+\documentclass[11pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\usepackage[english]{babel}
+
+
+% moderncv themes
+\moderncvstyle{classic}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{green}                              % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Dhamodharan}{Sundararajan}
+\title{Senior Software Engineer}
+\address{Bangalore}{India}{}
+\phone[mobile]{+91 9840810060}
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{sdhamodharan20@gmail.com}
+\homepage{https://www.linkedin.com/in/dsundar16/}
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{Hiring Team}{Zalando}
+\date{\today}
+\opening{Dear Hiring Team,}
+\closing{Sincerely,}
+\enclosure[Enclosure]{Resume}
+\makelettertitle
+
+I am excited to apply for the Software Engineer opportunity at Zalando. With 7+ years of experience building and operating Java-based backend and fullstack systems in production, I am motivated by roles where engineering decisions create direct business and partner impact at scale.
+
+In my current role as Senior Software Engineer at Mercedes-Benz Research and Development India, I design, develop, deploy, and maintain workflow and platform services using Java, Spring Boot, PostgreSQL, Docker, Kubernetes, and AWS. I led end-to-end delivery of a workflow automation solution that improved process reliability by 60\%, and built event-driven integrations across microservices that improved end-to-end processing reliability by 40\%.
+
+I am particularly interested in this role because of Zalando's ownership model across the full development cycle, from architecture and API design to operations. I regularly contribute to technical design decisions, API discussions, effort estimation, and production issue resolution while collaborating closely with product, QA, and engineering stakeholders. I also bring hands-on fullstack experience with React and TypeScript, which helps me deliver integrated solutions across backend and frontend components.
+
+I actively use AI-assisted development tools to improve engineering throughput and quality while applying disciplined validation and responsible usage practices. I would welcome the opportunity to contribute to Zalando's microservices ecosystem and help build scalable, reliable software solutions on AWS.
+
+
+
+\vspace{0.5cm}
+
+
+\makeletterclosing
+
+\end{document}
+
+
+%% end of file `template.tex'.
