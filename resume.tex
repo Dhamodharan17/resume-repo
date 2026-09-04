@@ -105,6 +105,12 @@
       {Mercedes-Benz Research and Development India}{May 2022 -- Present}
       {Senior Software Engineer}{Bangalore, India}
       \resumeItemListStart
+        \resumeItem{Engineered an in-memory caching solution using Redis with a 30-minute TTL strategy to serve low-volatility car testing data, reducing database read IOPS by over 95\% and driving sub-10ms API latency while maintaining high system availability.}
+        \resumeItem{Built dynamic, responsive UI components using React and TypeScript, replacing manual fetch logic with React Query (TanStack) and Axios to manage server-state, resulting in automated caching, reduced redundant network calls, and smoother user workflows.}
+        \resumeItem{Optimized JVM garbage collection for a core Spring Boot batch service by transitioning from G1GC to Parallel GC, maximizing CPU throughput and reducing batch job execution times during heavy data processing runs.}
+        \resumeItem{Diagnosed and resolved critical production performance bottlenecks and latency spikes by analyzing JVM Heap Dumps (MAT / VisualVM) to identify memory leaks, uncollected objects, and improper resource cleanup.}
+        \resumeItem{Spearheaded client-side performance optimization using React Profiler and source-map-explorer/bundle-analyzer to identify rendering bottlenecks and bundle bloat; implemented React.lazy and Suspense for route-level code splitting to accelerate page load times.}
+        \resumeItem{Resolved application freeze errors and HTTP request timeouts under heavy traffic by tuning embedded Tomcat web server thread pool parameters (server.tomcat.threads.max and connection backlog limits) in Spring Boot, preventing thread exhaustion and stabilizing API availability.}
         \resumeItem{Engineered a cloud-native BPMN 2.0 workflow engine using \textbf{Java 21, Spring Boot, Activiti \&  PostgreSQL} to orchestrate fault lifecycles, reducing feature rollout turnaround times by \textbf{28\%}.}
         \resumeItem{Implemented an automated rules engine utilizing \textbf{Drools, DB-backed JSONB, and Spring Boot} to dynamic auto-route incident tickets to department reps, accelerating resolution routing accuracy by \textbf{32\%}.}
         \resumeItem{Architected a resilient order management system using \textbf{Java 21, Spring Boot, and Resilience4j} (Circuit Breakers/Fallbacks), processing \textbf{500+ daily transactions} while maintaining zero downtime during downstream failure simulations.}
