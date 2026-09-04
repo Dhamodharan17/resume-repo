@@ -5,7 +5,7 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,12pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -23,19 +23,7 @@
 \setlength{\multicolsep}{-3.0pt}
 \setlength{\columnsep}{-1pt}
 \input{glyphtounicode}
-
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
+\linespread{1.05}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -44,11 +32,11 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.6in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1.19in}
-\addtolength{\topmargin}{-.7in}
-\addtolength{\textheight}{1.4in}
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.45in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-.55in}
+\addtolength{\textheight}{1.15in}
 
 \urlstyle{same}
 
@@ -58,86 +46,56 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large\bfseries
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-2pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
+% Ensure that generated pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
-
-\newcommand{\classesList}[4]{
-    \item\small{
-        {#1 #2 #3 #4 \vspace{-2pt}}
+    {#1 \vspace{0pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+  \vspace{-1pt}\item
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & \textbf{\small #2} \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-4pt}
 }
-
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & \textbf{\small #2}\\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
 \renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=3pt, topsep=4pt, parsep=0pt, partopsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \begin{document}
 
 %----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
 \begin{center}
   {\Huge \scshape Dhamodharan Sundararajan} \\ \vspace{6pt}
-  % Full-Stack Software Developer \\ \vspace{1pt}
   \small \href{mailto:sdhamodharan20@gmail.com}{\underline{sdhamodharan20@gmail.com}} $|$
   +91 9840810060 $|$
-  \href{https://leetcode.com/dsundar}{\underline{leetcode.com/dsundar}} $|$
-  \href{https://www.linkedin.com/in/dsundar16/}{\underline{linkedin.com/in/dsundar}} $|$
-  \href{https://github.com/Dhamodharan17}{\underline{github.com/dsundar}}
+  \href{https://leetcode.com/dsundar}{\underline{leetcode/dsundar}} $|$
+  \href{https://www.linkedin.com/in/dsundar16/}{\underline{linkedin/dsundar}} $|$
+  \href{https://github.com/Dhamodharan17}{\underline{github/Dhamodharan17}}
     \vspace{-8pt}
 \end{center}
 
-
 %-----------SUMMARY-----------
-\section{Summary}
-  \small{Senior Software Engineer with 7+ years of experience designing, developing, deploying, and operating Java-based backend and fullstack applications in production. Strong hands-on background in Java, Spring Boot, REST APIs, microservices, event-driven systems, SQL, Docker, Kubernetes, and AWS, with focus on scalable, secure, and maintainable software. Proven track record owning the full development lifecycle from architecture and API design to testing, release, and production operations, while collaborating effectively in cross-functional agile teams. Practical user of AI-assisted development tools with disciplined validation, quality, and reliability mindset.}
-\vspace{-8pt}
+% \section{Summary}
+%   \small{Senior Backend \& Fullstack Engineer with 7+ years of experience engineering high-throughput, distributed microservices, event-driven architectures, and production data workflows across backend and cloud infrastructure. Proven track record leading technical execution across Java, Spring Boot, React, Kafka, Docker, Kubernetes, and AWS to modernize legacy core platforms, reduce system latency, and drive workflow automation in high-volume enterprise environments.}
+% \vspace{-8pt}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
@@ -147,106 +105,49 @@
       {Mercedes-Benz Research and Development India}{May 2022 -- Present}
       {Senior Software Engineer}{Bangalore, India}
       \resumeItemListStart
-        
-      \resumeItem{Owned end-to-end design, architecture, and deployment of a workflow automation service using Java, Spring Boot, React, Keycloak, PostgreSQL, Docker, Kubernetes, and AWS S3, with emphasis on reliable data flow, audit logging, and compliance, replacing manual tracking and improving process reliability by 60\%.}
-        
-      \resumeItem{Designed and operated a configurable monitoring platform for distributed backend services, using Spring Boot REST APIs and event-driven processing to ensure timely incident detection, auditability, and stable service delivery across complex business and partner-facing scenarios.}
-        
-        \resumeItem{Built asynchronous, event-driven service integrations using Spring Boot, messaging, CompletableFuture, and retry policies to ensure reliable data flow and consistency across microservices, improving end-to-end processing reliability by 40\%.}
-
-      \resumeItem{Contributed to technical design discussions, API contracts, solution estimation, and implementation planning, collaborating closely with Product and business stakeholders to translate ambiguous requirements into robust backend solutions with clear operational outcomes.}
-
-      \resumeItem{Led production troubleshooting through observability dashboards, defect analysis, and structured diagnostics to resolve incidents and continuously improve service quality, reliability, and maintainability.}
-
-      \resumeItem{Developed and validated technical approaches with proof-of-concept implementations where needed, helping reduce delivery risk for new workflows and integrations.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Polaris Virtusa}{April 2021 -- May 2022}
-      {Full-Stack Developer}{Chennai, India}
-      \resumeItemListStart
-        \resumeItem {Contributed to the migration of a legacy monolithic banking platform to Azure using Java, Spring Boot, and ReactJS, and worked with scalable GitHub Actions CI/CD pipelines using Docker and Kubernetes for cloud-native delivery, helping improve release frequency by 40\%.}
-        \resumeItem {Worked across backend and frontend layers to deliver integrated features, with hands-on development in Java/Spring Boot services and React-based user interfaces in an agile team setup.}
+        \resumeItem{Engineered a cloud-native BPMN 2.0 workflow engine using \textbf{Java 21, Spring Boot, Activiti \&  PostgreSQL} to orchestrate fault lifecycles, reducing feature rollout turnaround times by \textbf{28\%}.}
+        \resumeItem{Implemented an automated rules engine utilizing \textbf{Drools, DB-backed JSONB, and Spring Boot} to dynamic auto-route incident tickets to department reps, accelerating resolution routing accuracy by \textbf{32\%}.}
+        \resumeItem{Architected a resilient order management system using \textbf{Java 21, Spring Boot, and Resilience4j} (Circuit Breakers/Fallbacks), processing \textbf{500+ daily transactions} while maintaining zero downtime during downstream failure simulations.}
+        \resumeItem{Engineered an event-driven NLP classification pipeline using \textbf{Spring Boot, Apache Kafka, Python, and React UI}, streaming and processing \textbf{250+ customer queries/day} to decrease manual triage workload by \textbf{12 hrs/week}.}
+        \resumeItem{Built high-throughput fault administration search APIs backed by an in-memory \textbf{FaultAdminCache} with delta synchronization, cutting lookup latency by \textbf{40\%}.}
+        \resumeItem{Designed an event-driven audit pipeline integrating \textbf{Spring Boot, PostgreSQL, and JSON diffing} to persist process snapshots and transition events across \textbf{300+ daily workflow events}.}
+        % \resumeItem{Architected secure OAuth2/OIDC token conversion services handling legacy \textbf{SMSESSION-to-Bearer authentication} and dynamic Keycloak RBAC across \textbf{1,000+ active users}.}
+        \resumeItem{Engineered asynchronous notification pipelines using \textbf{Spring Boot, Redis caching, and Amazon S3} to process multi-media fault attachments and email dispatches for \textbf{150+ notifications/day}.}
+        \resumeItem{Developed scheduled synchronization jobs utilizing \textbf{ShedLock and REST APIs} to reconcile enterprise identity entitlements with zero downtime.}
+        % \resumeItem{Constructed a modular micro-frontend SPA using \textbf{React 18, Webpack Module Federation, and Node.js/Express BFF}, improving client-side page load speed by \textbf{27\%}.}
+        % \resumeItem{Implemented role-specific operational dashboards in \textbf{React 18 and Redux} with an automated localization engine (EN/DE) serving \textbf{400+ concurrent enterprise users}.}
+        \resumeItem{Applied low-level design patterns, concurrency controls (Executors, CompletableFuture), and JVM tuning (heap dumps, GC optimization) to optimize core microservice stability and throughput.}
+        % \resumeItem{Drove production observability and L3 support across distributed services using \textbf{Grafana and Kibana}, resolving critical incidents and raising system availability to \textbf{99.5\%}.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Cognizant Technology Solutions}{January 2019 -- April 2021}
       {Programmer Analyst}{Chennai, India}
       \resumeItemListStart
-      
-        \resumeItem{Engineered Java and Spring Boot REST APIs for enterprise backend and workflow systems, ensuring data accuracy, consistency, and auditability across structured business processes.}
-        
-        \resumeItem{Built event-driven backend services using Spring Boot, asynchronous processing, and messaging patterns to handle complex, data-heavy workflows with high reliability and scalability.}
-
-      \resumeItem {Contributed to cloud-native modernization of a legacy platform using Java, Spring Boot, Docker, Kubernetes, and GitHub Actions CI/CD, improving deployment rigor and increasing release frequency by 40\%.}
-
-      \resumeItem {Collaborated with business analysts, QA teams, and fellow developers to deliver production-ready releases with focus on data correctness, API quality, and engineering rigor in customer-facing systems.}
-
-      \resumeItem {Supported system reliability and compliance in production workflows through defect analysis, root cause investigation, and thoughtful remediation practices.}
-              
-        % \resumeItem{Collaborated with cross-functional teams to gather requirements, define API contracts, and deliver end-to-end features across the full stack (Spring Boot + React + MySQL).}
-        
-    \resumeItemListEnd
+        \resumeItem{Spearheaded core modernization of legacy monolithic platform to Spring Boot microservices and ReactJS using Docker, Kubernetes, and GitHub Actions, boosting deployment frequency by \textbf{35\%}.}
+        \resumeItem{Implemented an orchestrated Saga pattern for multi-step distributed transactions using Java and Spring Boot, guaranteeing data consistency without 2PC across \textbf{12+ microservices}.}
+        \resumeItem{Engineered high-throughput REST APIs and event-driven backend services handling \textbf{800+ daily events} with asynchronous messaging patterns to enforce auditability across banking workflows.}
+        % \resumeItem{Optimized React frontend performance using React.memo, useCallback, and RxJS streams (debounceTime, shareReplay), cutting unnecessary re-renders and improving UI responsiveness by \textbf{22\%}.}
+        % \resumeItem{Re-indexed and normalized MySQL database structures for critical modules, optimizing high-load database query speeds by \textbf{30\%}.}
+      \resumeItemListEnd
     
   \resumeSubHeadingListEnd
 \vspace{-16pt}
 
-
-
 %-----------SKILLS-----------
 \section{Skills}
-  \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-      \begin{tabular*}{0.97\textwidth}{@{}l@{\hspace{1.5em}}l}
-        \textbf{Languages} & Java, JavaScript, TypeScript, Python, Kotlin (working knowledge) \\
-        \textbf{Frameworks} & Spring Framework (Spring Boot, Spring Data), React, Node.js, GraphQL, Redux, Resilience4j \\
-        \textbf{Backend Expertise} & REST API Design, API Integrations, Enterprise Application Development, Microservices, Event-Driven Architecture, Asynchronous Processing, Distributed Systems \\
-        \textbf{Frontend} & JavaScript (ES6), TypeScript, React, HTML, CSS \\
-        \textbf{Databases} & SQL, MySQL, PostgreSQL, MongoDB, DynamoDB, Cassandra, Elasticsearch \\
-        \textbf{Cloud \& Tools} & AWS (S3), Docker, Kubernetes, Maven, Kafka, GitHub, GitHub Actions CI/CD, Linux, Grafana, Kibana \\
-        \textbf{Engineering Practices} & End-to-End Ownership, CI/CD, Unit Testing, Integration Testing, Code Reviews, Observability, Incident Triage, Architecture Documentation, Agile Delivery \\
-        \textbf{Non-Functional Focus} & Security-Aware Development, Performance Optimization, Scalability, Maintainability, High Availability Mindset, Root Cause Analysis \\
-        \textbf{AI-Driven Development} & GitHub Copilot, Claude, Responsible AI Usage, Result Validation, LangChain, Jupyter Notebook \\
-      \end{tabular*}
-    }}
-  \end{itemize}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+     \begin{tabular*}{0.98\textwidth}{@{}l@{\extracolsep{\fill}}l}
+      \textbf{Languages} & Java, JavaScript, TypeScript, Python \\
+      \textbf{Frameworks} & Spring, Spring Boot, Spring Batch, Spring WebFlux, React, Node.js, Redux \\
+      \textbf{Databases} & MySQL, MongoDB, Cassandra, Elasticsearch, Redis, AWS S3 \\
+      \textbf{Platforms} & GitHub, GitHub Actions, Docker, Kubernetes, Kafka, Azure, Prometheus, Grafana, RabbitMQ \\
+      \textbf{AI Tools} & Claude, GitHub Copilot, Generative AI, Agentic AI, LangChain, Jupyter Notebook \\
+    \end{tabular*}
+  }}
+\end{itemize}
   \vspace{-16pt}
-
-
-
-%-----------PROJECTS-----------
-\section{Projects}
-    \vspace{-5pt}
-    \resumeSubHeadingListStart
-    
-      % \resumeProjectHeading
-      %     {\textbf{Vehicle Telemetry Platform} $|$ \emph{Java, Spring Boot, React, Kafka, Cassandra}}{}
-      %     \resumeItemListStart
-      %       \resumeItem{Built a full-stack application with Spring Boot REST APIs for telemetry ingestion, a Kafka-based event pipeline for async processing, and a React dashboard for visualizing vehicle health metrics stored in Cassandra.}
-      %       \resumeItem{Applied event-driven architecture patterns including producer-consumer decoupling, schema design for time-series data, and WebSocket-based live updates on the dashboard, with emphasis on scalable, low-latency data processing.}
-      %     \resumeItemListEnd
-      %     \vspace{-13pt}
-          
-     \resumeProjectHeading
-          {\textbf{ML-Based Support Ticket Classifier} $|$ \emph{Java, Spring Boot, Apache Kafka, Python}}{}
-          \resumeItemListStart
-            \resumeItem{Designed an event-driven pipeline where a Spring Boot producer publishes support tickets to Kafka, and a Python consumer classifies them using a TF-IDF + logistic regression model, returning labels via a REST callback.}
-            \resumeItem{Implemented retry logic, dead-letter topic handling, and a simple React UI to view classification results and manually correct mislabeled tickets.}
-          \resumeItemListEnd
-          % \vspace{-13pt}
-          
-          % \resumeProjectHeading
-          
-          % {\textbf{Microfrontend Vehicle Test Data Platform} $|$ \emph{React.js, Microfrontend Architecture}}{}
-          
-          % \resumeItemListStart
-          %   \resumeItem{Built a React.js-based microfrontend architecture to handle vehicle test data and support the PDM data layer used for engineering decision-making.}
-          %   \resumeItem{Designed modular, reusable frontend components to improve scalability and maintainability across vehicle data workflows.}
-          % \resumeItemListEnd 
-          
-    \resumeSubHeadingListEnd
-\vspace{-15pt}
-
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -255,22 +156,5 @@
       {Bachelor of Technology - Information Technology}{}
       {Anna University - SAEC}{Aug 2014 -- May 2018}
   \resumeSubHeadingListEnd
-
-%-----------Certifications-----------
-% \section{Education \& Certifications}
-%  \resumeSubHeadingListStart
-%       \resumeSubheading
-%       {Microservices: Designing Highly Scalable Systems}{Aug 2020}
-%       {Udemy}{}
-%       \resumeSubheading
-%       {Applied Machine Learning}{May 2021 -- May 2022}
-%       {Applied Data Science}{}
-%  \resumeSubHeadingListEnd
-%-----------ACHIEVEMENTS---------------
-% \section{Achievements}
-%   \resumeSubHeadingListStart
-%     \resumeSubheading{Mercedes-Benz Research and Development India}{2024 - 2025}{Silver Star Award (Awarded Twice)}{}
-%   \resumeSubHeadingListEnd
-
 
 \end{document}
